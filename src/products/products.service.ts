@@ -19,7 +19,7 @@ export class ProductService {
   }
 
   findOne(id: number){
-    return this.products.find(product => product.id == id);
+    return this.products.find(product => product.id === id);
   }
 
   update(id: number, updatedProduct) {

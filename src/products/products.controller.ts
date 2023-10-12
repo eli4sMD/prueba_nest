@@ -17,7 +17,8 @@ export class ProductsController {
 
   @Get(':id')
   findOne(@Param('id') id: number) {
-    return this.productService.findOne(id);
+    const idN = Number(id)
+    return this.productService.findOne(idN);
   }
 
   @Put(':id')
